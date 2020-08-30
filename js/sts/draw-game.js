@@ -26,19 +26,19 @@ function setup() {
 
 function draw() {
     background(255,255,255);
-      drawPlate(plateX, plateY, 200, 200);
+    drawPlate(plateX, plateY, 200, 200);
     if(ingredientY < 600){
       image(hamImage,0, ingredientY, 70, 70);
       image(lettuceImage, lettuceX, ingredientY, 70, 70);    
     }
     ingredientY = ingredientY + speed;
-    if(plateX == lettuceX && plateY == ingredientY) {
+    if(plateX < lettuceX && lettuceX < (plateX + 200) && plateY < ingredientY && ingredientY < (plateY + 200)) {
       collisionDetected();
     }
 }
 
 function collisionDetected(){
-  alert('hello world!!');
+  console.log('hhhh');
 }
 
 function drawPlate(x, y, w, h) {
