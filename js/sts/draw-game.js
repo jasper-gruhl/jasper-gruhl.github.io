@@ -26,12 +26,12 @@ function setup() {
 
 function draw() {
     background(255,255,255);
+      drawPlate(plateX, plateY, 200, 200);
     if(ingredientY < 600){
       image(hamImage,0, ingredientY, 70, 70);
       image(lettuceImage, lettuceX, ingredientY, 70, 70);    
     }
     ingredientY = ingredientY + speed;
-    drawPlate(plateX, plateY, 200, 200);
     if(plateX == lettuceX && plateY == ingredientY) {
       collisionDetected();
     }
