@@ -7,7 +7,7 @@ let ingredientY = 0;
 let speed = 5;
 let plateX = 200;
 let plateY = 300;
-let plateXSpeed=15;
+let plateXSpeed = 15;
 let lettuceX = 200;
 
 
